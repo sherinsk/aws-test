@@ -24,6 +24,10 @@ app.get('/users', async (req, res) => {
   res.json(users);
 });
 
+app.get('/', async (req, res) => {
+    res.send("WOW MY API WORKS...")
+  });
+
 // Read a single User
 app.get('/users/:id', async (req, res) => {
   const { id } = req.params;
